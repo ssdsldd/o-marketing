@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;500;700&family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@700&display=swap');
+
+body{
+    min-height: 100vh;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #373A39;
+}
+
+.container {
+    max-width: 1190px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header {
+
+		&__container {
+		}
+
+		&__top {
+            padding-bottom: 29px;
+		}
+
+		&__row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+		}
+
+		&__logo {
+		}
+
+		&__menu {
+		}
+
+		&__list {
+            display: flex;
+            gap: 32px;
+            padding-top: 7px;
+		}
+
+		&__item {
+		}
+
+		&__link {
+            padding: 0 9px 9px;
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.6px;
+            position: relative;
+            transition: all 0.5s;
+            &:hover{
+                border-bottom: 1px solid #FCBB08; 
+            }
+		}
+
+		&__content {
+            background-image: url(/images/header-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+		}
+
+		&__column {
+            font-family: 'Montserrat';
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 62px;
+            align-items: center;
+            justify-content: space-between;
+            min-height: calc(100vh - 94px);
+		}
+
+		&__title {
+            margin-top: auto;
+            font-weight: 500;
+            font-size: 72px;
+            line-height: 88px;
+            color: #FFFFFF;
+            padding-top: 130px;
+		}
+
+		&__subtitle {
+            margin-bottom: auto;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 2.74286px;
+            color: #FCBB08;
+		}
+}
+

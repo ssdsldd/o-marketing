@@ -15,6 +15,26 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 75px;
+  letter-spacing: -1.65px;
+  color: #242121;
+  position: relative;
+  align-self: flex-start;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  left: 0px;
+  bottom: -18px;
+  background: #FCBB08;
+}
+
 .header__top {
   padding-bottom: 29px;
 }
@@ -71,4 +91,124 @@ body {
   line-height: 20px;
   letter-spacing: 2.74286px;
   color: #FCBB08;
+}
+
+.about {
+  background: #F6F8FA;
+}
+.about__container {
+  padding: 150px 0 160px;
+}
+.about__row {
+  display: flex;
+  justify-content: space-between;
+}
+.about__title {
+  font-size: 48px;
+}
+.about__text {
+  max-width: 770px;
+}
+.about__text p:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.expertise__container {
+  padding: 143px 0 164px;
+}
+.expertise__title {
+  margin-bottom: 89px;
+}
+.expertise__content {
+  display: flex;
+  margin-bottom: 110px;
+}
+.expertise__items {
+  margin-right: 30px;
+  width: 370px;
+  flex: none;
+}
+.expertise__item {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #1D1D1D;
+  border-top: 2px solid #1D1D1D;
+  padding: 2px 0 28px;
+  position: relative;
+}
+.expertise__value {
+  display: block;
+  position: absolute;
+  right: 7px;
+  top: 0;
+}
+.expertise__value::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 7px;
+  top: -2px;
+  background-color: #F0F0F0;
+}
+.expertise__text p:not(:last-child) {
+  margin-bottom: 25px;
+}
+.expertise__row {
+  display: flex;
+  gap: 28px;
+}
+.expertise__column {
+  padding-left: 89px;
+  position: relative;
+}
+.expertise__column::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 52px;
+  top: 0;
+  left: 0;
+}
+.expertise__column-graph::before {
+  background: url(/images/exp_1.svg);
+}
+.expertise__column-dev::before {
+  background: url(/images/exp_2.svg);
+}
+.expertise__column-mark::before {
+  background: url(/images/exp_3.svg);
+}
+.expertise__name {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 4.29px;
+  color: #333333;
+  margin-bottom: 14px;
+}
+.expertise__subname {
+  color: #777777;
+}
+
+.magic {
+  background: #F6F8FA;
+  background-image: url(/images/dog.jpg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: left 82%;
+}
+.magic__content {
+  padding: 101px 0 180px;
+  width: 470px;
+  margin-left: auto;
+}
+.magic__title {
+  margin-bottom: 67px;
+}
+.magic__text p:not(:last-child) {
+  margin-bottom: 25px;
 }

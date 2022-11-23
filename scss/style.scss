@@ -261,4 +261,105 @@ body{
       }
 }
 
+.portfolio {
+      padding: 139px 0 166px;
+      &__top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 122px;
+            align-items: center;
+      }
+
+      &__title {
+      }
+
+      &__menu {
+            padding-right: 64px;
+      }
+
+      &__button {
+      }
+
+      &__gallery {
+            column-count: 4;
+            column-gap: 23px;
+      }
+
+      &__photo {
+            margin-bottom: 23px;
+            img{
+                  width: 100%;
+            }
+      }
+
+      &__link {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            letter-spacing: 1.2px;
+            color: #242121;
+            padding: 42px 15px 41px;    
+            background: #F6F8FA;
+      }
+
+      &__blockquote {
+            padding: 130px 0 148px;
+            max-width: 652px;
+            margin: 0 auto;
+            font-family: 'Merriweather';
+            font-style: italic;
+            font-size: 18px;
+            line-height: 36px;
+            color: #242121;
+            text-align: center;
+      }
+
+      &__autor {
+            padding-top: 51px;
+            display: block;
+            font-family: 'Merriweather';
+            font-style: italic;
+            font-size: 14px;
+            line-height: 32px;
+            color: #9E9E9E;
+      }
+
+      &__video {
+            background-image: url(/images/video.jpg);
+            height: 324px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+      }
+
+      &__row {
+            padding: 164px 0px 166px;
+            display: flex;
+            justify-content: space-around;
+      }
+
+      &__value {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 73px;
+            color: #242121;
+            span{
+                  padding-top: 9px;
+                  display: block;
+                  font-family: 'Open Sans';
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 19px;
+                  color: #333333;
+                  text-align: center;
+            }
+      }
+}
+
 

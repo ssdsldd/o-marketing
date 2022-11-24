@@ -1,6 +1,3 @@
 $(function(){
-    $(".slider").slick({
-        dots: true,
-        arrows: false,
-    });
+    let mixer = mixitup('.portfolio__gallery');
 });

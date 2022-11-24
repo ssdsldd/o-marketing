@@ -278,17 +278,34 @@ body{
       }
 
       &__button {
+            background-color: transparent;
+            border: none;
+            padding: 0 4px 5px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 24px;
+            text-align: right;
+            letter-spacing: 2px;
+            color: #333333;
+            &:not(:last-child){
+                  margin-right: 17px;
+            }
       }
 
       &__gallery {
             column-count: 4;
             column-gap: 23px;
+            margin-bottom: 72px;
       }
 
       &__photo {
             margin-bottom: 23px;
             img{
                   width: 100%;
+            }
+            position: relative;
+            &:hover .portfolio__show-project{
+                  opacity: 1;
             }
       }
 
@@ -338,7 +355,7 @@ body{
       }
 
       &__row {
-            padding: 164px 0px 166px;
+            padding-top: 164px;
             display: flex;
             justify-content: space-around;
       }
@@ -360,6 +377,28 @@ body{
                   text-align: center;
             }
       }
+
+      &__show-project{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 1.4px;
+            color: #FFFFFF;
+            background-color: #4C4A4A;
+            border: 12px solid #7D7C7C;
+            opacity: 0;
+            transition: all 0.3s;
+      }
 }
 
-
+.mixitup-control-active{
+      border-bottom: 1px solid #FCBB08;
+}

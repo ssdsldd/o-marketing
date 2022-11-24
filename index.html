@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O marketing</title>
     <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
     <link rel="stylesheet" href="/css/slick.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -115,41 +116,50 @@
                 <div class="portfolio__top">
                     <h2 class="portfolio__title title">Portfolio</h2>
                     <div class="portfolio__menu">
-                        <button class="portfolio__button">ALL</button>
-                        <button class="portfolio__button">BRANDING</button>
-                        <button class="portfolio__button">DESIGN</button>
-                        <button class="portfolio__button">PHOTOGRAPHY</button>
-                        <button class="portfolio__button">ILLUSTRATION</button>
+                        <button class="portfolio__button" data-filter = "all">ALL</button>
+                        <button class="portfolio__button" data-filter = ".category-b">DESIGN</button>
+                        <button class="portfolio__button" data-filter = ".category-c">PHOTOGRAPHY</button>
+                        <button class="portfolio__button" data-filter = ".category-d">ILLUSTRATION</button>
+                        <button class="portfolio__button" data-filter = ".category-a">BRANDING</button>
                     </div>
                 </div>
             </div>
             <div class="portfolio__gallery">
-                <div class="portfolio__photo">
+                <div class="portfolio__photo mix category-a">
                     <img src="/images/portfolio/1.jpg" alt="gallery image">
+                    <a href="#" class="portfolio__show-project">SHOW PROJECT</a>
                 </div>
-                <div class="portfolio__photo">
+                <div class="portfolio__photo mix category-a">
                     <img src="/images/portfolio/2.jpg" alt="gallery image">
+                    <a href="#" class="portfolio__show-project">SHOW PROJECT</a>
                 </div>
-                <div class="portfolio__photo">
+                <div class="portfolio__photo mix category-b">
                     <img src="/images/portfolio/3.jpg" alt="gallery image">
+                    <a href="#" class="portfolio__show-project">SHOW PROJECT</a>
                 </div>
-                <div class="portfolio__photo">
+                <div class="portfolio__photo mix category-b">
                     <img src="/images/portfolio/4.jpg" alt="gallery image">
+                    <a href="#" class="portfolio__show-project">SHOW PROJECT</a>
                 </div>
-                <div class="portfolio__photo">
+                <div class="portfolio__photo mix category-b">
                     <img src="/images/portfolio/5.jpg" alt="gallery image">
+                    <a href="#" class="portfolio__show-project">SHOW PROJECT</a>
                 </div>
-                <div class="portfolio__photo">
+                <div class="portfolio__photo mix category-c">
                     <img src="/images/portfolio/6.jpg" alt="gallery image">
+                    <a href="#" class="portfolio__show-project">SHOW PROJECT</a>
                 </div>
-                <div class="portfolio__photo">
+                <div class="portfolio__photo mix category-c">
                     <img src="/images/portfolio/7.jpg" alt="gallery image">
+                    <a href="#" class="portfolio__show-project">SHOW PROJECT</a>
                 </div>
-                <div class="portfolio__photo">
+                <div class="portfolio__photo mix category-d">
                     <img src="/images/portfolio/8.jpg" alt="gallery image">
+                    <a href="#" class="portfolio__show-project">SHOW PROJECT</a>
                 </div>
-                <div class="portfolio__photo">
+                <div class="portfolio__photo mix category-d">
                     <img src="/images/portfolio/9.jpg" alt="gallery image">
+                    <a href="#" class="portfolio__show-project">SHOW PROJECT</a>
                 </div>
             </div>
             <div class="portfolio__link">
@@ -160,7 +170,7 @@
                 <span class="portfolio__autor">Крис Броган</span>
             </blockquote>
             <div class="portfolio__video">
-                <a href="#">
+                <a href="https://www.youtube.com/watch?v=jfKfPfyJRdk" data-fancybox>
                     <img src="/images/play.svg" alt="play icon">
                 </a>
             </div>
@@ -187,7 +197,9 @@
         </section>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="/js/slick.min.js"></script>
+    <script src="/js/mixitup.min.js"></script>
     <script src="/js/script.js"></script>
 </body>
 

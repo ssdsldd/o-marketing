@@ -402,3 +402,112 @@ body{
 .mixitup-control-active{
       border-bottom: 1px solid #FCBB08;
 }
+
+.slider {
+      background: #F8F6FA;
+      &__container {
+      }
+
+      &__content {
+            padding: 359px 0 114px;
+      }
+
+      &__item {
+      }
+
+      &__link {
+      }
+
+      &__title {
+            display: inline-block;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 52px;
+            color: #242121;
+            margin-bottom: 10px;
+            max-width: 704px;
+      }
+
+      &__text {
+            max-width: 560px;
+            margin-bottom: 191px;
+      }
+}
+
+.slick-dots{
+      display: flex;
+      gap: 13.3px;
+      button{
+            background: #242121;
+            font-size: 0;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            opacity: 0.4;
+            padding: 0;
+      }
+}
+
+.slick-dots .slick-active{
+      button{
+            width: 10px;
+            height: 10px;
+            // border-radius: 50%;
+            opacity: 1;
+      }
+
+}
+
+.slick-arrow{
+      position: absolute;
+      top: 50%;
+}
+
+.slick-prev,
+.slick-next{
+      background-color: transparent;
+      transform: translateY(-80%);
+}
+
+.slick-prev{
+      left: -97px;
+}
+
+.slick-next{
+      right: -97px;
+}
+
+.team {
+
+      &__container {
+            padding: 120px 0 132px;
+      }
+
+      &__title {
+            margin-bottom: 102px;
+      }
+
+      &__content {
+            display: flex;
+            justify-content: space-between;
+      }
+
+      &__item {
+            text-align: center;
+      }
+
+      &__name {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #333333;
+            margin: 35px 0 12px;
+      }
+
+      &__post {
+            font-size: 12px;
+            line-height: 16px;
+      }
+}
+

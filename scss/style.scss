@@ -582,4 +582,142 @@ body{
       }
 }
 
+.connection {
+      background-image: url(/images/map.jpg);
+      background-repeat: no-repeat;
+      background-size: 40%;
+      background-position: right 62%;
+
+      &_textarea {
+            display: block;
+            width: 100%;
+            &::placeholder{
+                  font-weight: 400;
+                  font-size: 12px;
+                  line-height: 20px;
+                  letter-spacing: 3.70909px;
+                  color: #B8B8B8;
+            }
+            margin: 53px 0 40px;
+            padding-bottom: 136px;
+            border-bottom: 2px solid #373A39;
+            resize: none;
+      }
+
+      &__container {
+            padding: 145px 0 162px;
+      }
+
+      &__title {
+            margin-bottom: 94px;
+      }
+
+      &__form {
+            max-width: 569px;
+      }
+
+      &__input {
+            display: block;
+            width: 100%;
+            border-bottom: 2px solid #373A39;
+            &::placeholder{
+                  font-weight: 400;
+                  font-size: 12px;
+                  line-height: 20px;
+                  letter-spacing: 3.70909px;
+                  color: #B8B8B8;
+            }
+            padding-bottom: 16px;
+            &:first-child{
+                  margin-bottom: 32px;
+            }
+      }
+
+      &__button {
+            display: block;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 11px;
+            line-height: 13px;
+            letter-spacing: 2px;
+            color: #FFFFFF;
+            background: #242121;
+            padding: 16px 70px;
+      }
+}
+
+.footer {
+      background: #333333;
+      &__container {
+            text-align: center;
+            padding: 110px 0 60px;
+      }
+
+      &__logo {
+            display: inline-block;
+            padding: 0 35px 4px;
+            border-bottom: 2px solid #FCBB08;
+            margin-bottom: 73px;
+      }
+
+      &__row {
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+            margin-bottom: 65px;
+      }
+
+      &__item {
+      }
+
+      &__link {
+            font-family: 'Montserrat';
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 4px;
+            color: #FFFFFF;
+      }
+
+      &__address {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 32px;
+            color: #FFFFFF;
+      }
+
+      &__tel {
+            display: inline-block;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 32px;
+            color: #FFFFFF;
+      }
+
+      &__mail {
+            display: block;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 32px;
+            color: #FFFFFF;
+            margin-bottom: 57px;
+      }
+
+      &__arrow {
+            display: block;
+      }
+
+      &__cop {
+            padding: 43px 0 41px;
+            background: #2A2C2B;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            color: #CCCCCC;
+      }
+}
+
+
 

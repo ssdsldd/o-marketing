@@ -10,10 +10,11 @@ body{
     color: #373A39;
 }
 
+
 .container {
-    max-width: 1190px;
-    padding: 0 10px;
-    margin: 0 auto;
+      padding: 0 10px;
+      max-width: 1190px;
+      margin: 0 auto;
 }
 
 .title {
@@ -120,7 +121,7 @@ body{
 .about {
       background: #F6F8FA;
       &__container {
-            padding: 150px 0 160px;
+            padding: 150px 10 160px;
       }
 
       &__row {
@@ -143,7 +144,7 @@ body{
 .expertise {
 
       &__container {
-            padding: 143px 0 164px;
+            padding: 143px 10px 164px;
       }
 
       &__title {
@@ -481,7 +482,7 @@ body{
 .team {
 
       &__container {
-            padding: 120px 0 132px;
+            padding: 120px 10 132px;
       }
 
       &__title {
@@ -515,7 +516,7 @@ body{
 .pricing {
       background: #F6F8FA;
       &__container {
-            padding: 144px 0 162px;
+            padding: 144px 10px 162px;
       }
 
       &__title {
@@ -573,7 +574,7 @@ body{
 .clients {
 
       &__container {
-            padding: 69px 0 95px;
+            padding: 69px 10px 95px;
       }
 
       &__row {
@@ -606,7 +607,7 @@ body{
       }
 
       &__container {
-            padding: 145px 0 162px;
+            padding: 145px 10px 162px;
       }
 
       &__title {
@@ -651,7 +652,7 @@ body{
       background: #333333;
       &__container {
             text-align: center;
-            padding: 110px 0 60px;
+            padding: 110px 10px 60px;
       }
 
       &__logo {
@@ -720,8 +721,61 @@ body{
       }
 }
 
+@media (max-width: 1200px){
+      .title{
+            font-size: 48px;
+      }
+      .about{
+            &__container{
+                  padding: 75px 10px;
+            }
+            &__row{
+                  display: block;
+            }
+            &__title{
+                  margin-bottom: 50px;
+            }
+            &__text{
+                  max-width: 100%;
+            }
+      }
+      .expertise{
+            &__container{
+                  padding: 75px 10px;
+            }
+      }
+}
+
+@media (max-width: 992px){
+      .expertise{
+            &__content{
+                  display: block;
+            }
+            &__items{
+                  width: 100%;
+            }
+            &__title{
+                  margin-bottom: 50px;
+            }
+            &__content{
+                  margin-bottom: 50px;
+            }
+            &__row{
+                  display: block;
+            }
+            &__column{
+                  &:not(:last-child){
+                        margin-bottom: 30px;
+                  }
+            }
+      }
+}
 
 @media (max-width: 768px){
+      .title{
+            font-size: 28px;
+            line-height: 50px;
+      }
       .header{
             &__row{
                   padding: 0 15px;
@@ -775,9 +829,17 @@ body{
                   }
             }
       }
+      .about, .expertise{
+            &__container{
+                  padding: 45px 10px;
+            }
+      }
 }
 
 @media (max-width: 440px){
+      .title{
+            font-size: 28px;
+      }
       .header{
             &__title{
                   font-size: 40px;
@@ -786,6 +848,15 @@ body{
             &__subtitle{
                   font-size: 12px;
                   line-height: 15px;
+            }
+      }
+}
+
+@media (max-width: 340px){
+      .expertise{
+            &__column{
+                  padding-left: 0px;
+                  padding-top: 60px;
             }
       }
 }

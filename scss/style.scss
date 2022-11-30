@@ -482,7 +482,7 @@ body{
 .team {
 
       &__container {
-            padding: 120px 10 132px;
+            padding: 120px 10px 132px;
       }
 
       &__title {
@@ -492,10 +492,13 @@ body{
       &__content {
             display: flex;
             justify-content: space-between;
+            text-align: center;
       }
 
-      &__item {
-            text-align: center;
+      &__image{
+            img{
+                  max-width: 100%;
+            }
       }
 
       &__name {
@@ -581,6 +584,12 @@ body{
             display: flex;
             justify-content: space-between;
             align-items: center;
+      }
+
+      &__img{
+            img{
+                  width: 100%;
+            }
       }
 }
 
@@ -782,6 +791,40 @@ body{
                   margin-bottom: 100px;
             }
       }
+      .team{
+            &__container{
+                  padding: 75px 10px;
+            }
+            &__content {
+                  column-gap: 20px;
+            }
+      }
+      .pricing{
+            &__container{
+                  padding: 75px 10px;
+            }
+            &__row{
+                  column-gap: 20px;
+            }
+      }
+      .clients{
+            &__container {
+                  padding: 69px 10px 95px;
+            }
+            &__row{
+                  column-gap: 20px;
+            }
+      }
+      .connection{
+            &__container {
+                  padding: 75px 10px;
+            }
+      }
+      .footer{
+            &__container {
+                  padding-top: 50px;
+            }
+      }
 }
 
 @media (max-width: 992px){
@@ -831,6 +874,22 @@ body{
             &__row {
                   padding-top: 75px;
             }
+      }
+      .connection{
+            background-image: none;
+      }
+      .footer{
+            &__logo {
+                  margin-bottom: 35px;
+            }
+            &__item {
+                  width: 33.33%;
+            }
+            &__row {
+                  flex-wrap: wrap;
+                  margin-bottom: 35px;
+            }
+
       }
 }
 
@@ -928,6 +987,46 @@ body{
                   margin-bottom: 50px;
             }
       }
+      .team{
+            &__title {
+                  margin-bottom: 50px;
+            }
+            &__content {
+                  flex-direction: column;
+            }
+            &__name{
+                  margin-top: 15px;
+            }
+            &__post{
+                  margin-bottom: 35px;
+            }
+      }
+      .pricing{
+            &__title {
+                  margin-bottom: 50px;
+            }
+            &__row{
+                  flex-direction: column;
+            }
+            &__item{
+                  margin: 0 auto 20px;
+                  max-width: 100%;
+            }
+      }
+      .clients{
+            &__row{
+                  justify-content: space-around;
+                  flex-wrap: wrap;
+            }
+            &__img{
+                  margin-bottom: 30px;
+            }
+      }
+      .connection{
+            &__title {
+                  margin-bottom: 50px;
+            }
+      }
 }
 
 @media (max-width: 440px){
@@ -950,6 +1049,12 @@ body{
             }
             &__value{
                   width: 100%;
+            }
+      }
+      .footer{
+            &__row {
+                 flex-direction: column;
+                 align-items: center;
             }
       }
 }

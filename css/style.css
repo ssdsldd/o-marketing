@@ -406,7 +406,7 @@ body {
 }
 
 .team__container {
-  padding: 120px 10 132px;
+  padding: 120px 10px 132px;
 }
 .team__title {
   margin-bottom: 102px;
@@ -414,9 +414,10 @@ body {
 .team__content {
   display: flex;
   justify-content: space-between;
-}
-.team__item {
   text-align: center;
+}
+.team__image img {
+  max-width: 100%;
 }
 .team__name {
   font-family: "Montserrat";
@@ -489,6 +490,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.clients__img img {
+  width: 100%;
 }
 
 .connection {
@@ -689,6 +693,33 @@ body {
   .slider__text {
     margin-bottom: 100px;
   }
+  .team__container {
+    padding: 75px 10px;
+  }
+  .team__content {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .pricing__container {
+    padding: 75px 10px;
+  }
+  .pricing__row {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .clients__container {
+    padding: 69px 10px 95px;
+  }
+  .clients__row {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .connection__container {
+    padding: 75px 10px;
+  }
+  .footer__container {
+    padding-top: 50px;
+  }
 }
 @media (max-width: 992px) {
   .expertise__content {
@@ -731,6 +762,19 @@ body {
   }
   .portfolio__row {
     padding-top: 75px;
+  }
+  .connection {
+    background-image: none;
+  }
+  .footer__logo {
+    margin-bottom: 35px;
+  }
+  .footer__item {
+    width: 33.33%;
+  }
+  .footer__row {
+    flex-wrap: wrap;
+    margin-bottom: 35px;
   }
 }
 @media (max-width: 768px) {
@@ -810,6 +854,38 @@ body {
   .slider__text {
     margin-bottom: 50px;
   }
+  .team__title {
+    margin-bottom: 50px;
+  }
+  .team__content {
+    flex-direction: column;
+  }
+  .team__name {
+    margin-top: 15px;
+  }
+  .team__post {
+    margin-bottom: 35px;
+  }
+  .pricing__title {
+    margin-bottom: 50px;
+  }
+  .pricing__row {
+    flex-direction: column;
+  }
+  .pricing__item {
+    margin: 0 auto 20px;
+    max-width: 100%;
+  }
+  .clients__row {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .clients__img {
+    margin-bottom: 30px;
+  }
+  .connection__title {
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 440px) {
   .title {
@@ -829,6 +905,10 @@ body {
   }
   .portfolio__value {
     width: 100%;
+  }
+  .footer__row {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 340px) {

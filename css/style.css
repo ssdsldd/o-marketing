@@ -639,6 +639,11 @@ body {
   color: #CCCCCC;
 }
 
+@media (max-width: 1440px) {
+  .magic__content {
+    padding: 50px 0;
+  }
+}
 @media (max-width: 1200px) {
   .title {
     font-size: 48px;
@@ -677,6 +682,16 @@ body {
   }
   .expertise__column:not(:last-child) {
     margin-bottom: 30px;
+  }
+  .magic {
+    background-image: none;
+  }
+  .magic__content {
+    width: 100%;
+    margin-left: 0;
+  }
+  .magic__title {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 768px) {

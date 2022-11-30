@@ -121,7 +121,7 @@ body{
 .about {
       background: #F6F8FA;
       &__container {
-            padding: 150px 10 160px;
+            padding: 150px 10px 160px;
       }
 
       &__row {
@@ -727,6 +727,18 @@ body{
                   padding: 50px 0;
             }
       }
+      .slider{
+            &__content {
+                  padding-left: 60px;
+            }
+      }
+      .slick-prev{
+            left: 0;
+      }
+      
+      .slick-next{
+            right: 0;
+      }
 }
 
 @media (max-width: 1200px){
@@ -750,6 +762,24 @@ body{
       .expertise{
             &__container{
                   padding: 75px 10px;
+            }
+      }
+      .portfolio {
+            padding: 75px 10px;
+            &__gallery {
+                  column-count: 3;
+            }
+            &__menu {
+                  padding-right: 0;
+            }
+      }
+      .slider{
+            &__content {
+                  padding-top: 120px;
+                  padding-bottom: 75px;
+            }
+            &__text{
+                  margin-bottom: 100px;
             }
       }
 }
@@ -785,6 +815,21 @@ body{
             }
             &__title{
                   margin-bottom: 50px;
+            }
+      }
+      .portfolio {
+            &__top {
+                  display: block;
+                  margin-bottom: 40px;
+            }
+            &__title {
+                  margin-bottom: 50px;
+            }
+            &__blockquote {
+                  padding: 75px 0 75px;
+            }
+            &__row {
+                  padding-top: 75px;
             }
       }
 }
@@ -852,6 +897,37 @@ body{
                   padding: 45px 10px;
             }
       }
+      .portfolio {
+            &__button{
+                  display: block;
+                  &:not(:last-child){
+                        margin-bottom: 20px;
+                  }
+            }
+            &__gallery {
+                  column-count: 2;
+            }
+            &__row{
+                  flex-wrap: wrap;
+            }
+            &__value{
+                  text-align: center;
+                  width: 50%;
+                  margin-bottom: 30px;
+            }
+      }
+      .slider{
+            &__content {
+                  padding-left: 0px;
+            }
+            &__title{
+                  font-size: 25px;
+                  line-height: 40px;
+            }
+            &__text{
+                  margin-bottom: 50px;
+            }
+      }
 }
 
 @media (max-width: 440px){
@@ -866,6 +942,14 @@ body{
             &__subtitle{
                   font-size: 12px;
                   line-height: 15px;
+            }
+      }
+      .portfolio{
+            &__gallery {
+                  column-count: 1;
+            }
+            &__value{
+                  width: 100%;
             }
       }
 }

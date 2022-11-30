@@ -100,7 +100,7 @@ body {
   background: #F6F8FA;
 }
 .about__container {
-  padding: 150px 10 160px;
+  padding: 150px 10px 160px;
 }
 .about__row {
   display: flex;
@@ -643,6 +643,15 @@ body {
   .magic__content {
     padding: 50px 0;
   }
+  .slider__content {
+    padding-left: 60px;
+  }
+  .slick-prev {
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
+  }
 }
 @media (max-width: 1200px) {
   .title {
@@ -662,6 +671,23 @@ body {
   }
   .expertise__container {
     padding: 75px 10px;
+  }
+  .portfolio {
+    padding: 75px 10px;
+  }
+  .portfolio__gallery {
+    -moz-column-count: 3;
+         column-count: 3;
+  }
+  .portfolio__menu {
+    padding-right: 0;
+  }
+  .slider__content {
+    padding-top: 120px;
+    padding-bottom: 75px;
+  }
+  .slider__text {
+    margin-bottom: 100px;
   }
 }
 @media (max-width: 992px) {
@@ -692,6 +718,19 @@ body {
   }
   .magic__title {
     margin-bottom: 50px;
+  }
+  .portfolio__top {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .portfolio__title {
+    margin-bottom: 50px;
+  }
+  .portfolio__blockquote {
+    padding: 75px 0 75px;
+  }
+  .portfolio__row {
+    padding-top: 75px;
   }
 }
 @media (max-width: 768px) {
@@ -743,6 +782,34 @@ body {
   .about__container, .expertise__container {
     padding: 45px 10px;
   }
+  .portfolio__button {
+    display: block;
+  }
+  .portfolio__button:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .portfolio__gallery {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+  .portfolio__row {
+    flex-wrap: wrap;
+  }
+  .portfolio__value {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .slider__content {
+    padding-left: 0px;
+  }
+  .slider__title {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .slider__text {
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 440px) {
   .title {
@@ -755,6 +822,13 @@ body {
   .header__subtitle {
     font-size: 12px;
     line-height: 15px;
+  }
+  .portfolio__gallery {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+  .portfolio__value {
+    width: 100%;
   }
 }
 @media (max-width: 340px) {
